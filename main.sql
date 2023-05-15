@@ -48,7 +48,8 @@ CREATE TABLE Playlist (
 );
 
 CREATE TABLE Playlist_Song (
-	playlist_id INTEGER PRIMARY KEY NOT NULL,
+	playlist_id INTEGER NOT NULL,
 	song_id INTEGER NOT NULL,
+	FOREIGN KEY(playlist_id) REFERENCES Playlist(playlist_id),
 	FOREIGN KEY(song_id) REFERENCES Song(song_id)
 );
