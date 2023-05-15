@@ -44,7 +44,7 @@ CREATE TABLE Playlist (
 	playlist_id INTEGER PRIMARY KEY NOT NULL,
 	playlist_name VARCHAR(64) NOT NULL,
 	user_id INTEGER NOT NULL,
-	FOREIGN KEY(user_id) REFERENCES User(user_id)
+	FOREIGN KEY(user_id) REFERENCES Users(user_id)
 );
 
 CREATE TABLE Playlist_Song (
