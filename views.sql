@@ -1,5 +1,5 @@
 --admin view query
-SELECT * FROM USERS;
+SELECT * FROM Users;
 
 --artist music query
 SELECT DISTINCT Album.album_title, Song.song_title, Song.total_streams FROM Song INNER JOIN Album ON 
